@@ -1,7 +1,8 @@
-import { Inter } from "next/font/google";
+import { Raleway } from "next/font/google";
 import "./globals.css";
+import Navigation from "./shared/navbar";
 
-const inter = Inter({ subsets: ["latin"] });
+const font = Raleway({ subsets: ["latin"] });
 
 export const metadata = {
   title: "Create Next App",
@@ -11,7 +12,15 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={`${font.className} flex flex-col min-h-screen`}>
+        <Navigation />
+        <main
+          id="main"
+          className="mx-auto w-full bg-white flex flex-col justify-center text-black min-h-full flex-grow"
+        >
+          {children}
+        </main>
+      </body>
     </html>
   );
 }
