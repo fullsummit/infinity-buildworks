@@ -1,3 +1,40 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+h2 {
+    @apply text-4xl font-bold;
+}
+
+.split-section {
+    @apply w-full mx-auto min-h-screen flex flex-wrap flex-col-reverse lg:flex-row items-center justify-center border-b border-gray-100;
+}
+
+.split-section p, ul {
+    @apply text-lg
+}
+
+.split-section ul {
+    @apply flex flex-col gap-2;
+}
+
+.responsive-img {
+    @apply h-[70vh] w-auto lg:w-auto lg:h-fit object-cover rounded-md shadow-md;
+}
+
+.responsive-img-cta {
+    @apply h-[70vh] w-auto lg:w-auto lg:h-screen object-cover rounded-md shadow-md;
+}
+
+
+.split-section-content {
+    @apply flex-1 flex flex-col items-center justify-center gap-4 h-fit bg-white z-10 w-full lg:w-1/2 p-10 text-left rounded-md;
+}
+
+.split-section-image {
+    @apply flex-1 h-full w-full lg:w-1/2 grayscale flex items-center justify-center object-cover transition-all hover:scale-125 hover:transform relative;
+}
+
+input, textarea {
+    @apply w-full p-2 border border-gray-300 rounded-md;
+}
