@@ -28,11 +28,11 @@ h2 {
 
 
 .split-section-content {
-    @apply flex-1 flex flex-col items-center justify-center gap-4 h-fit bg-white z-10 w-full lg:w-1/2 p-10 text-left rounded-md;
+    @apply flex-1 flex flex-col items-center justify-center gap-4 h-fit bg-white bg-opacity-70 z-10 w-full lg:w-1/2 p-10 text-left rounded-md;
 }
 
 .split-section-image {
-    @apply flex-1 h-full w-full lg:w-1/2 grayscale flex items-center justify-center object-cover transition-all hover:scale-125 hover:transform relative;
+    @apply flex-1 h-full w-full lg:w-1/2 grayscale flex items-center justify-center object-cover transition-all duration-200 hover:scale-125 hover:transform relative;
 }
 
 input, textarea {
