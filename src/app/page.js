@@ -13,10 +13,10 @@ export default function Home() {
         <div className="w-full xl:w-1/2 bg-black flex h-full overflow-hidden relative grayscale">
           <div className="bg-black h-full w-full absolute bg-opacity-80"></div>
           <img
-            src="/optimized/hero-320px.webp"
+            src={`${process.env.NEXT_PUBLIC_BASEPATH}/optimized/hero-320px.webp`}
             width="1792"
             height="1024"
-            srcSet="/optimized/hero-320px.webp 320w, /optimized/hero-640px.webp 640w, /optimized/hero-1024px.webp 1024w"
+            srcSet={`${process.env.NEXT_PUBLIC_BASEPATH}/optimized/hero-320px.webp 320w, ${process.env.NEXT_PUBLIC_BASEPATH}/optimized/hero-640px.webp 640w, ${process.env.NEXT_PUBLIC_BASEPATH}/optimized/hero-1024px.webp 1024w`}
             alt="hero"
             className="responsive-img-cta"
           />
@@ -35,10 +35,10 @@ function Vision() {
     <section className="split-section">
       <div className="split-section-image">
         <img
-          src="/optimized/vision-320px.webp"
+          src={`${process.env.NEXT_PUBLIC_BASEPATH}/optimized/vision-320px.webp`}
           width="1792"
           height="1024"
-          srcSet="/optimized/vision-320px.webp 320w, /optimized/vision-640px.webp 640w, /optimized/vision-1024px.webp 1024w"
+          srcSet={`${process.env.NEXT_PUBLIC_BASEPATH}/optimized/vision-320px.webp 320w, ${process.env.NEXT_PUBLIC_BASEPATH}/optimized/vision-640px.webp 640w, ${process.env.NEXT_PUBLIC_BASEPATH}/optimized/vision-1024px.webp 1024w`}
           alt="Vision"
           className="responsive-img"
         />
@@ -94,10 +94,10 @@ function WhyChooseUs() {
       </div>
       <div className="split-section-image">
         <img
-          src="/optimized/choose-320px.jpg"
+          src={`${process.env.NEXT_PUBLIC_BASEPATH}/optimized/choose-320px.jpg`}
           width="1792"
           height="1024"
-          srcSet="/optimized/choose-320px.jpg 320w, /optimized/choose-640px.jpg 640w, /optimized/choose-1024px.jpg 1024w"
+          srcSet={`${process.env.NEXT_PUBLIC_BASEPATH}/optimized/choose-320px.jpg 320w, ${process.env.NEXT_PUBLIC_BASEPATH}/optimized/choose-640px.jpg 640w, ${process.env.NEXT_PUBLIC_BASEPATH}/optimized/choose-1024px.jpg 1024w`}
           alt="Decorative"
           className="responsive-img"
         />
@@ -112,10 +112,10 @@ function Services() {
     <section className="split-section">
       <div className="split-section-image">
         <img
-          src="/optimized/services-320px.webp"
+          src={`${process.env.NEXT_PUBLIC_BASEPATH}/optimized/services-320px.webp`}
           width="1792"
           height="1024"
-          srcSet="/optimized/services-320px.webp 320w, /optimized/services-640px.webp 640w, /optimized/services-1024px.webp 1024w"
+          srcSet={`${process.env.NEXT_PUBLIC_BASEPATH}/optimized/services-320px.webp 320w, ${process.env.NEXT_PUBLIC_BASEPATH}/optimized/services-640px.webp 640w, ${process.env.NEXT_PUBLIC_BASEPATH}/optimized/services-1024px.webp 1024w`}
           alt="Decorative"
           className="responsive-img"
         />

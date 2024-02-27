@@ -48,10 +48,10 @@ export default function Navigation() {
       <nav className={`flex items-center w-full p-4 justify-between`}>
         <div className={`flex gap-1 items-center z-30`}>
           <img
-            src="/optimized/logo-320px.webp"
+            src={`${process.env.NEXT_PUBLIC_BASEPATH}/optimized/logo-320px.webp`}
             width="751"
             height="390"
-            srcSet="/optimized/logo-320px.webp 320w, /optimized/logo-640px.webp 640w, /optimized/logo-1024px.webp 1024w"
+            srcSet={`${process.env.NEXT_PUBLIC_BASEPATH}/optimized/logo-320px.webp 320w, ${process.env.NEXT_PUBLIC_BASEPATH}/optimized/logo-640px.webp 640w, ${process.env.NEXT_PUBLIC_BASEPATH}/optimized/logo-1024px.webp 1024w`}
             className="w-[70px] h-auto max-w-[50vw] overflow-hidden flex"
             alt="Ficticious Logo"
             loading="eager"

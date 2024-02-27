@@ -1,7 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
     output: "export",
-    basePath: "/rolling-dough",
+    basePath: "/infinity-buildworks",
     trailingSlash: true,
     env: {
         NEXT_PUBLIC_PROD: "true",
